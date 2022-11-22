@@ -1,0 +1,67 @@
+@import 'colors.scss';
+
+
+.back__container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 10%;
+    margin: 40px 0;
+    height: 40px !important;
+    background-color: rgb(219, 173, 87) !important;
+}
+
+.actividades__container {
+
+    .actividades__title {}
+
+    .actividades__thumbnail {
+
+
+        .actividades__img {}
+    }
+
+    .actividades__subtitle {}
+}
+
+.cards-actividades__container{
+
+    .card__actividades{
+
+        .card__actividades__container{
+
+            .card__actividades__container__title{
+
+                .card__actividades__thumbnail{
+
+                    .card__actividades__img{}
+                }
+    
+                .card__actividades__title{}
+            }
+        
+            .card__actividades__content{
+
+                .card__actividades__content__text{}
+
+                .card__actividades__content__button{}
+            }
+
+        }
+
+        .card__actividades__main__thumbnail{
+
+            .card__actividades__main__img{}
+        }
+    }
+}
+
+.scroll_up__container{
+    
+    .scroll_up__container__thumbnail{
+
+        .scroll_up__container__img{}
+    }
+
+    .back__button{}
+}

@@ -3,7 +3,7 @@
  .card_container{
     display: flex;
     justify-content: center;
-    gap: 20;
+    gap: 15px;
     align-items: center;
     background-color: $bg-black;
    }
@@ -21,19 +21,32 @@
     border: 2px solid #333333;
     border-radius: 16px;
    }
+
+   .card:hover{
+      transition: 0.7s;
+      border: 2px solid $font-yellow;
+      scale: 1.03;
+      background-color: $bg-black;
+   }
   
    .card__text{
     color: white;
     margin: 0;
+    font-weight: 400;
    }
+
   
    .card__title{
     color: yellow;
     font-size: 25px;
+    letter-spacing: 1.1px;
+
    }
   
    .card__subtitle{
     font-size: 16px;
+    letter-spacing: 1px;
+
    }
   
    .card__thumbnail{

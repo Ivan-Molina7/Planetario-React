@@ -19,7 +19,7 @@ function HomeView() {
         <img
           src={planetSaturn}
           alt=""
-          className="presentation__img--absolute"
+          className="presentation__img--absolute planet--hover"
         />
         <div className="separator-l"></div>
         <div className="presentation__thumbnail">
@@ -36,7 +36,7 @@ function HomeView() {
           <p className="trending__text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
             tempora sed hic, eligendi nostrum mollitia natus velit ducimus
-            cupiditate corporis.
+            cupiditate corporis cupiditate corporis cupiditate corporis cupiditate corporis.
           </p>
         </div>
       </section>
@@ -55,13 +55,13 @@ function HomeView() {
         <h1 className="reservas__title title">Reservas</h1>
         <div className="separator-l"></div>
         <div className="reservas__content">
-          <button className="reservas__button">Reservar</button>
+          <button className="reservas__button">RESERVAR</button>
         </div>
         <div className="separator-l"></div>
 
-        <button className="reservas__scroll-up">
+        <a href="#presentation" className="reservas__scroll-up">
           <FontAwesomeIcon icon={faChevronUp} />
-        </button>
+        </a>
       </div>
     </>
   );

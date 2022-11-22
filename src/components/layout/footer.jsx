@@ -51,7 +51,7 @@ function Footer() {
                 </a>
               </li>
             </ul>
-            <p className="right__web">2023 By Buos 2022 Web3.0</p>
+            <p className="right__web">2023 By Bios 2022 Web3.0</p>
           </div>
         </div>
       </footer>

@@ -2,12 +2,15 @@
 @import './modules/card.scss';
 @import './modules/normalize.min.css';
 @import './modules/slider.scss';
-
+@import './modules/fonts.scss';
+@import './modules/footer.scss';
+@import './modules/reservas.scss';
 
 * {
     list-style: none !important;
     text-decoration: none !important;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: $fOswald;
+    scroll-behavior: smooth;
 }
 
 .main-wrapper {
@@ -35,6 +38,8 @@
     font-size: 50px;
 }
 
+
+
 .header {
     background-color: $bg-black;
     height: 113px;
@@ -46,8 +51,14 @@
     padding: $padding-layout;
 }
 
+.header:hover {
+    transition: 0.4s;
+    border-bottom: 1px solid $font-yellow;
+    box-shadow: 0 0 40px $font-yellow;
+}
+
 .header__brand {
-    width: 300px;
+    width: 340px;
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -60,6 +71,10 @@
     font-weight: 700;
     line-height: 50px;
     letter-spacing: 0em;
+
+    p {
+        font-family: $fOrbitron !important;
+    }
 }
 
 .header__brand__thumbnail {
@@ -68,9 +83,23 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    line-height: 0;
+    font-size: 0;
+
+  
 }
 
-.header__brand__img {}
+.header__brand__img {
+    display: inline-block;
+}
+
+
+.header__brand__img:hover {
+    transition: 0.4s;
+    filter: drop-shadow(0 2px 5px $white);
+}
+
+
 
 
 .header__nav {
@@ -94,7 +123,14 @@
 .header__nav__item li {
     color: $white;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 20px;
+}
+
+.header__nav__item li:hover {
+        transition: 0.4s;
+        text-shadow: 0 0 30px $font-yellow;
+        color: $font-yellow;
+    
 }
 
 .header__nav__item li a {
@@ -121,10 +157,13 @@
         font-size: 65px;
         text-align: center;
         margin: 0 20%;
+        font-family: $fOrbitron !important;
         color: $font-yellow;
+        z-index: 100;
 
         span {
             color: $white;
+            font-family: $fOrbitron !important;
         }
     }
 
@@ -134,8 +173,14 @@
         opacity: 0.2;
         right: 0;
         height: 160px;
-        margin-right: 300px;
+        margin-right: 200px;
     }
+
+    .presentation__img--absolute:hover {
+        opacity: 1;
+        cursor: pointer;
+    }
+
 
     .presentation__thumbnail {
         width: 100%;
@@ -157,6 +202,11 @@
             margin-bottom: -150px;
         }
 
+        .presentation__img--absolute-2:hover {
+            opacity: 1;
+            transition: ease-in-out 0.7s;
+            transition-timing-function: ease-in-out;
+        }
     }
 
     .container__trending {
@@ -167,15 +217,21 @@
         gap: 50px;
         padding: $padding-layout;
 
-
+        .trending__title {
+            font-weight: 500;
+        }
 
         .trending__text {
             color: $white;
             font-size: 30px;
             text-align: center;
+            font-weight: 400;
+            letter-spacing: 1.5px;
+            line-height: 40px;
         }
     }
 }
+
 
 //! SLIDER //! SLIDER //! SLIDER //! SLIDER 
 
@@ -190,6 +246,11 @@
     background-color: $bg-black;
 }
 
+.slider__title {
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
 .slider__img--absolute {
     position: absolute;
     opacity: 0.2;
@@ -198,6 +259,11 @@
     width: 300px;
     padding-right: 12%;
     margin-top: -142px;
+}
+
+.slider__img--absolute:hover {
+    opacity: 1;
+    transition: ease-in-out 0.7s;
 }
 
 .slider__img--absolute-2 {
@@ -209,6 +275,15 @@
     padding-left: 8%;
 }
 
+.slider__img--absolute-2:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+//! RESERVAS RESERVAS RESERVAS RESERVAS RESERVAS 
+//! RESERVAS RESERVAS RESERVAS RESERVAS RESERVAS 
+//! RESERVAS RESERVAS RESERVAS RESERVAS RESERVAS 
+
 .reservas__container {
     display: flex;
     justify-content: center;
@@ -216,6 +291,11 @@
     flex-direction: column;
     background-color: $bg-black;
     padding: 0 10%;
+}
+
+.reservas__title {
+    font-weight: 700;
+    letter-spacing: 1.2px;
 }
 
 .reservas__content {
@@ -230,153 +310,48 @@
     background-color: $bg-black;
     border-radius: 1500px 1500px 0 0;
     scale: 1.3;
-    
+
 }
 
 .reservas__button {
     width: 420px;
     height: 75px;
-    pad: 10px;
     border-radius: 10px;
     border: none;
     background-color: $font-yellow;
-    font-weight: 500;
-    font-size: 20px;
     text-align: center;
     color: $btn-text;
     scale: 0.7;
+    font-size: 25px;
+    font-weight: 500 !important;
+}
+
+.reservas__button:hover {
+    transition: 0.4s;
+    background-color: #00000099;
+    border: 1px solid $font-yellow;
+    box-shadow: 0 0 8px $font-yellow;
+    color: $font-yellow;
 }
 
 .reservas__scroll-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 50px;
     width: 50px;
-    left: 1333px;
-    top: 4242px;
     border-radius: 0px;
     border: 1px solid $font-yellow;
     background-color: $bg-black;
-    color: $font-yellow;;
+    color: $font-yellow;
+    ;
     align-self: flex-end;
     margin-bottom: 10px;
+
 }
 
-.ubicacion__container{
-    height: 680px;
-    display: flex;
-    justify-content: center;
-    border-top: 1px solid $btn-text;
-}
-
-.ubicacion__thumbnail{
-    width: 38%;;
-    background-color: aliceblue;
-    display: flex;
-    justify-content: flex-end;
-
-    .ubicacion__img{
-        width: 100%;
-        height: 100%;
-        right: 0;
-        filter: grayscale(200%);
-    }
-}
-
-.ubicacion__information{
-    display: flex;
-    padding: 70px 0;
-    align-items: center;
-    flex-direction: column;
-    width: 38%;;
-    background-color: $bg-black;
-    gap: 90px;
-
-    .information__text{
-        text-align: center;
-
-        h1{
-            font-size: 20px;
-            font-weight: 500;
-            padding: 5px 0;
-            color: $border-gray;
-        }
-    }
-
-    .information__contact{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: 30px;
-
-        .information__input{
-            font-weight: 500;
-            width: 400px;
-            height: 35px;
-            padding: 10px 8px 10px 8px;
-            color: $border-gray;
-            background: none;
-            font-size: 18px;
-            border: none;
-            border-bottom: 1px solid $font-yellow;
-        }
-
-        ::placeholder { color: $border-gray }
-
-        .information__button{
-            width: 100%;
-            height: 75px;
-            pad: 10px;
-            border-radius: 10px;
-            border: none;
-            background-color: $font-yellow;
-            font-weight: 500;
-            font-size: 20px;
-            text-align: center;
-            color: $btn-text;
-        }
-    }
-
-    .information__social{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 40px;
-        .social__container{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 40px;
-
-            .social__block{
-                width: 45px;
-                height: 45px;
-                border: 2px solid $border-gray;
-                border-radius: 50%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                .social__item{
-                    width: 100%;
-                    height: 100%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-             
-
-                    .social__item__icon{
-                        width: 40%;
-                        height: 40%;
-                        color: $border-gray;
-                        list-style: none;
-                        text-decoration: none;
-                    }
-                }
-            }
-        }
-
-        .right__web{
-            color: $border-gray;
-        }
-    }
+.reservas__scroll-up:hover {
+    transition: 0.7s;
+    border: 1px solid $font-yellow;
+    box-shadow: 0 0 5px $font-yellow;
 }
