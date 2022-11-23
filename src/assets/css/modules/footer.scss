@@ -1,5 +1,4 @@
-
-//! FOOTER FOOTER FOOTER FOOTER FOOTER
+@import './colors.scss';
 
 .ubicacion__container {
     height: 680px;
@@ -60,6 +59,7 @@
             background: none;
             font-size: 18px;
             border: none;
+            transition: 0.7s all;
             border-bottom: 1px solid $font-yellow;
         }
 
@@ -71,8 +71,6 @@
         .information__input:focus {
             outline: none;
             background-color: $btn-text;
-            transition: 0.7s all;
-          
           }
 
         .information__button {
@@ -86,12 +84,11 @@
             font-size: 20px;
             text-align: center;
             color: $btn-text;
+            transition: all 0.4s;
         }
 
-
-
         .information__button:hover {
-            transition: 0.4s;
+
             background-color: #00000099;
             border: 1px solid $font-yellow;
             box-shadow: 0 0 8px $font-yellow;
@@ -110,6 +107,7 @@
             justify-content: center;
             align-items: center;
             gap: 40px;
+            transition: 0.4s all !important;
 
             .social__block {
                 width: 45px;
@@ -119,6 +117,7 @@
                 justify-content: center;
                 align-items: center;
                 z-index: 100;
+                transition: 0.4s all !important;
 
                 .social__item {
                     width: 100%;
@@ -127,10 +126,10 @@
                     justify-content: center;
                     align-items: center;
                     z-index: 60;
+                    transition: 0.4s all !important;
 
                     .social__item:hover {
                         background-color: $font-yellow ;
-                        transition: 0.4s;
                     }
     
             
@@ -141,13 +140,13 @@
                         color: $border-gray;
                         list-style: none;
                         text-decoration: none;
-                        z-index: 50;
+                        z-index: 150;
                         padding: 10px;
                         border-radius: 50%;
+                        transition: 0.7s all ease !important;
                     }
 
                     .social__item__icon:hover {
-                        transition: 0.7s;
                         background-color: #00000099;
                         border: 2px solid $font-yellow;
                         box-shadow: 0 0 5px $font-yellow;

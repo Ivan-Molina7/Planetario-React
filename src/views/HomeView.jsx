@@ -11,7 +11,7 @@ function HomeView() {
   return (
     <>
       <div className="separator-xl"></div>
-      <section className="presentation">
+      <section className="presentation" id="presentation">
         <h1 className="presentation__title">
           Descubri el planetario en <span>Noviembre</span>, sumate a la
           aventura!!!
@@ -51,15 +51,15 @@ function HomeView() {
         <img src={planetSaturn} alt="" className="slider__img--absolute-2" />
       </div>
       <div className="separator-s"></div>
-      <div className="reservas__container">
-        <h1 className="reservas__title title">Reservas</h1>
+      <div className="reservas__container" id="reservas">
+        <h1 className="reservas__title title" >Reservas</h1>
         <div className="separator-l"></div>
         <div className="reservas__content">
           <button className="reservas__button">RESERVAR</button>
         </div>
         <div className="separator-l"></div>
 
-        <a href="#presentation" className="reservas__scroll-up">
+        <a href="#header" className="reservas__scroll-up">
           <FontAwesomeIcon icon={faChevronUp} />
         </a>
       </div>

@@ -49,10 +49,10 @@
     gap: 15%;
     border-bottom: 1px solid $border-gray;
     padding: $padding-layout;
+    transition: all 0.4s linear;
 }
 
 .header:hover {
-    transition: 0.4s;
     border-bottom: 1px solid $font-yellow;
     box-shadow: 0 0 40px $font-yellow;
 }
@@ -90,12 +90,12 @@
 }
 
 .header__brand__img {
+    transition:  0.4s linear;
     display: inline-block;
 }
 
 
 .header__brand__img:hover {
-    transition: 0.4s;
     filter: drop-shadow(0 2px 5px $white);
 }
 
@@ -124,10 +124,10 @@
     color: $white;
     font-weight: 500;
     font-size: 20px;
+    transition:  0.4s linear;
 }
 
 .header__nav__item li:hover {
-        transition: 0.4s;
         text-shadow: 0 0 30px $font-yellow;
         color: $font-yellow;
     
@@ -174,11 +174,11 @@
         right: 0;
         height: 160px;
         margin-right: 200px;
+     
     }
 
     .presentation__img--absolute:hover {
         opacity: 1;
-        cursor: pointer;
     }
 
 
@@ -200,11 +200,11 @@
             height: 300px;
             margin-right: 100px;
             margin-bottom: -150px;
+            transition: ease-in-out 0.7s;
         }
 
         .presentation__img--absolute-2:hover {
             opacity: 1;
-            transition: ease-in-out 0.7s;
             transition-timing-function: ease-in-out;
         }
     }
@@ -259,11 +259,12 @@
     width: 300px;
     padding-right: 12%;
     margin-top: -142px;
+    transition: ease-in-out 0.7s;
 }
 
 .slider__img--absolute:hover {
     opacity: 1;
-    transition: ease-in-out 0.7s;
+  
 }
 
 .slider__img--absolute-2 {
@@ -324,10 +325,11 @@
     scale: 0.7;
     font-size: 25px;
     font-weight: 500 !important;
+    transition: 0.4s ease-in-out;
 }
 
 .reservas__button:hover {
-    transition: 0.4s;
+
     background-color: #00000099;
     border: 1px solid $font-yellow;
     box-shadow: 0 0 8px $font-yellow;
@@ -347,11 +349,10 @@
     ;
     align-self: flex-end;
     margin-bottom: 10px;
-
+    transition: 0.7s;
 }
 
 .reservas__scroll-up:hover {
-    transition: 0.7s;
     border: 1px solid $font-yellow;
     box-shadow: 0 0 5px $font-yellow;
 }

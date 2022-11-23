@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 import AboutView from "../../views/AboutView";
 import HomeView from "../../views/HomeView";
-import ContactView from "../../views/ContactView";
 import "../../assets/css/style.min.css";
 import astronaut from "../../assets/img/astronaut.png";
 
@@ -11,7 +10,7 @@ const Home = React.lazy(() => import("../../views/HomeView"));
 function MainNavigation() {
   return (
     <Router>
-      <header className="header"  id="presentation">
+      <header className="header"  id="header">
         <div className="header__brand">
           <div className="header__brand__name">
             <p>Planetario</p>
@@ -23,13 +22,13 @@ function MainNavigation() {
         <div className="header__nav">
           <ul className="header__nav__item">
             <li>
-              <Link to="/">Actividades</Link>
+              <Link to="/about">Actividades</Link>
             </li>
             <li>
-              <Link to="/about">Reservas</Link>
+              <Link to="/">Reservas</Link>
             </li>
             <li>
-              <Link to="/contact">Contacto</Link>
+              <a href="#contacto">Contacto</a>
             </li>
           </ul>
         </div>
@@ -39,7 +38,6 @@ function MainNavigation() {
         <Routes>
           <Route path="/" element={<HomeView />} />
           <Route path="/about" element={<AboutView />} />
-          <Route path="/contact" element={<ContactView />} />
         </Routes>
       </main>
     </Router>

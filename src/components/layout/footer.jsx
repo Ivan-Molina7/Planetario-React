@@ -14,7 +14,7 @@ import {
 function Footer() {
   return (
     <>
-      <footer className="ubicacion__container">
+      <footer className="ubicacion__container" id="contacto">
         <div className="ubicacion__thumbnail">
           <img src={mapa} alt="" className="ubicacion__img" />
         </div>
