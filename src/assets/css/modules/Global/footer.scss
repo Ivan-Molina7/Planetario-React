@@ -1,21 +1,21 @@
 @import './colors.scss';
 
 .ubicacion__container {
-    height: 680px;
+    height: auto;
     display: flex;
     justify-content: center;
     border-top: 1px solid $btn-text;
 }
 
 .ubicacion__thumbnail {
-    width: 38%;
-    ;
-    background-color: aliceblue;
+    order: 2;
+    max-width: 680px;
     display: flex;
     justify-content: flex-end;
 
     .ubicacion__img {
-        width: 100%;
+        min-width: 700px !important;
+        min-height: 680px;
         height: 100%;
         right: 0;
         filter: grayscale(200%);
@@ -23,14 +23,14 @@
 }
 
 .ubicacion__information {
+    order: 1;
     display: flex;
-    padding: 70px 0;
+    padding: 70px 0 0 0;
     align-items: center;
     flex-direction: column;
-    width: 38%;
-    ;
     background-color: $bg-black;
     gap: 90px;
+    min-width: 700px !important;
 
     .information__text {
         text-align: center;
@@ -163,4 +163,26 @@
             color: $border-gray;
         }
     }
+}
+
+@media (max-width: 1440px) {
+
+    .ubicacion__container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+}
+@media (max-width: 1024px) {
+
+    .information__text {
+        text-align: center;
+
+        h1 {
+            font-size: 25px !important;
+            padding: 10px 0 !important;
+        }
+    }
+  
 }

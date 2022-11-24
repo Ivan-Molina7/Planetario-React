@@ -1,0 +1,124 @@
+@import '../Global/colors.scss';
+@import '../Global/fonts.scss';
+
+.presentation {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: $padding-layout;
+
+
+    .presentation__title {
+        color: $font-yellow;
+        font-family: $fOrbitron !important;
+        font-size: 65px;
+        font-weight: 700;
+        margin: 0 20%;
+        position: relative;
+        text-align: center;
+        z-index: 100;
+
+        span {
+            color: $white;
+            font-family: $fOrbitron !important;
+        }
+    }
+
+
+    .presentation__img--absolute {
+        height: 160px;
+        margin-right: 200px;
+        opacity: 0.2;
+        position: absolute;
+        right: 0;
+        transition: ease-in-out 0.7s;
+     
+    }
+
+    .presentation__img--absolute:hover {
+        opacity: 1;
+    }
+
+
+    .presentation__thumbnail {
+        height: 400px;
+        position: relative;
+        width: 100%;
+
+        .presentation__img {
+            height: 250px;
+            width: 430px;
+        }
+
+        .presentation__img--absolute-2 {
+            bottom: 0;
+            height: 300px;
+            margin-bottom: -150px;
+            margin-right: 100px;
+            opacity: 0.2;
+            position: absolute;
+            right: 0;
+            transition: ease-in-out 0.7s;
+        }
+
+        .presentation__img--absolute-2:hover {
+            opacity: 1;
+            transition-timing-function: ease-in-out;
+        }
+    }
+
+    .container__trending {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        justify-content: center;
+        padding: $padding-layout;
+
+        .trending__title {
+            font-weight: 500;
+        }
+
+        .trending__text {
+            color: $white;
+            font-size: 30px;
+            font-weight: 400;
+            letter-spacing: 1.5px;
+            line-height: 40px;
+            text-align: center;
+        }
+    }
+}
+
+
+
+@media (max-width: 1440px) {
+    .presentation__title{
+        margin: 0 10% !important;
+    }
+
+    .presentation__img--absolute {
+        margin-right: 130px !important;
+    }
+    
+  }
+
+
+@media (max-width: 1024px) {
+    .presentation__title{
+        margin: 0 !important;
+    }
+
+    .presentation__img--absolute, .presentation__img--absolute-2{
+       display: none !important;
+    }
+
+    .presentation{
+
+        .separator-md{
+            display: none;
+        }
+    }
+
+    
+  }

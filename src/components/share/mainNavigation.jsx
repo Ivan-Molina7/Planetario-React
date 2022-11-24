@@ -1,5 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Link,
+  Routes,
+} from "react-router-dom";
 import AboutView from "../../views/AboutView";
 import HomeView from "../../views/HomeView";
 import "../../assets/css/style.min.css";
@@ -7,10 +12,18 @@ import astronaut from "../../assets/img/astronaut.png";
 
 const Home = React.lazy(() => import("../../views/HomeView"));
 
+// function Homepage() {
+//   const history = useNavigate();
+
+//   const coursesPage = () => {
+//     history.push("/#reservas");
+//   };
+// }
+
 function MainNavigation() {
   return (
     <Router>
-      <header className="header"  id="header">
+      <header className="header" id="header">
         <div className="header__brand">
           <div className="header__brand__name">
             <p>Planetario</p>
@@ -25,7 +38,14 @@ function MainNavigation() {
               <Link to="/about">Actividades</Link>
             </li>
             <li>
-              <Link to="/">Reservas</Link>
+              <Link
+                to={{
+                  pathname: "/",
+                  search: ":reservas" ,
+                }}
+              >
+                Reservas
+              </Link>
             </li>
             <li>
               <a href="#contacto">Contacto</a>
@@ -43,5 +63,4 @@ function MainNavigation() {
     </Router>
   );
 }
-
 export default MainNavigation;
