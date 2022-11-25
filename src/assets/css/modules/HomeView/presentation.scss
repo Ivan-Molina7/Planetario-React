@@ -123,3 +123,45 @@
 
     
   }
+
+  
+  @media (max-width: 520px) {
+      
+
+    .presentation__title{
+        font-size: 50px !important;
+    }
+
+    .presentation__thumbnail{
+        display: flex;
+        justify-content: center;
+        height: 300px !important;
+    }
+  
+    .presentation__img{
+       scale: 0.7;
+    }
+      
+}
+
+@media (max-width: 428px) {
+
+    .presentation__title{
+        font-size: 40px !important;
+    }
+}
+
+
+@media (max-width: 375px){
+    .trending__title {
+        font-size: 40px !important;
+    }
+
+    .trending__text {
+        font-size: 25px !important;
+    }
+
+    .presentation__img{
+        scale: 0.6;
+     }
+  }

@@ -89,3 +89,16 @@
         margin-bottom: 40px;
     }
   }
+
+  @media (max-width: 428px){
+    .reservas__content {
+        border-radius: 50%;
+    }
+
+  }
+
+  @media (max-width: 375px){
+    .reservas__content {
+        height: 220px;
+    }
+  }

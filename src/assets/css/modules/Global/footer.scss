@@ -172,6 +172,7 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
+    padding-bottom: 20px;
   }
 
   
@@ -199,6 +200,8 @@
 }
 
 
+
+
 @media (max-width: 768px) {
 
     .ubicacion__thumbnail {
@@ -217,6 +220,50 @@
     .ubicacion__information {
         width: 100%;
         min-width: 100% !important;
+    }
+  
+}
+
+@media (max-width: 428px) {
+
+    .information__text{
+        width: 80%;
+    }
+
+    .information__contact{
+
+        width: 100%;
+
+        .information__input{
+            width: 80% !important;
+        }
+
+        .information__button{
+            width: 80% !important;
+        }
+    }
+
+    .ubicacion__information{
+        gap: 60px;
+    }
+
+
+    .ubicacion__thumbnail {
+        width: 100%;
+        justify-content: center;
+
+        .ubicacion__img {
+            min-width: 200px !important;
+            min-height: 280px;
+            height: 80%;
+            width: 80%;
+      
+        }
+    }
+
+    .social__block{
+        width: 65px !important;
+        height: 65px !important;
     }
   
 }

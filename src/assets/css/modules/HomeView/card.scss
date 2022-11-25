@@ -80,3 +80,10 @@
       gap: 30px;
      }
  }
+
+ @media (max-width: 428px){
+   .card {
+      height: 400px;
+      width: 270px !important;
+  }
+ }

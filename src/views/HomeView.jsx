@@ -10,7 +10,7 @@ import { faCoffee, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 function HomeView() {
   return (
     <>
-      <div className="separator-xl"></div>
+      <div className="separator-xl  separator-xl--query"></div>
       <section className="presentation" id="presentation">
         <h1 className="presentation__title">
           Descubri el planetario en <span>Noviembre</span>, sumate a la
@@ -21,7 +21,7 @@ function HomeView() {
           alt=""
           className="presentation__img--absolute planet--hover"
         />
-        <div className="separator-l"></div>
+        <div className="separator-l separator-l--query"></div>
         <div className="presentation__thumbnail">
           <img src={rocket} alt="" className="presentation__img" />
           <img
@@ -34,13 +34,11 @@ function HomeView() {
         <div className="container__trending">
           <h1 className="trending__title title">Lo mas destacado</h1>
           <p className="trending__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-            tempora sed hic, eligendi nostrum mollitia natus velit ducimus
-            cupiditate corporis cupiditate corporis cupiditate corporis cupiditate corporis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi consequuntur exercitationem, libero soluta cupiditate quod vitae eos. Blanditiis vitae incidunt hic perspiciatis architecto temporibus magni.
           </p>
         </div>
       </section>
-      <div className="separator-l"></div>
+      <div className="separator-l separator-l--query"></div>
       <Cards />
       <div className="separator-xl separator-xl--query"></div>
       <div className="slider__container">
