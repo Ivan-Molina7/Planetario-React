@@ -16,13 +16,10 @@ footer
 
 
 
-768
-
-gap brand 20px
-Header desplegable
+768   
 
 CARD container  
-    gap 30
+    gap 30**
 
 Eliminar slider
 

@@ -1,22 +1,20 @@
+@import './modules/AboutView/AboutView.scss';
+@import './modules/HomeView/HomeView.scss';
+
 
 //! IMPORTS GLOBALES
-@import 'modules/Global/header.scss';
-@import 'modules/Global/footer.scss';
+
 @import 'modules/Global/colors.scss';
 @import 'modules/Global/fonts.scss';
 @import 'modules/Global/normalize.min.css';
 
-//! IMPORTS INDEX
-@import 'modules/HomeView/HomeView.scss';
-
-//! IMPORTS ACTIVIDADES
-@import 'modules/AboutView/AboutView.scss';
 
 * {
     font-family: $fOswald;
     list-style: none !important;
     scroll-behavior: smooth;
     text-decoration: none !important;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .main-wrapper {
@@ -43,3 +41,16 @@
     color: $font-yellow;
     font-size: 50px;
 }
+
+@media (max-width: 768px) {
+
+    .separator-xl--query{
+       height: 100px;
+      }
+  
+      .separator-s--query{
+        display: none;
+      }
+  }
+ 
+

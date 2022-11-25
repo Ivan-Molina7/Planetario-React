@@ -1,5 +1,5 @@
 import mapa from "../../assets/img/mapsicle.png";
-
+import  '../../assets/css/modules/Global/footer.min.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCoffee, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import {

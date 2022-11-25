@@ -5,13 +5,13 @@
     display: flex;
     justify-content: center;
     border-top: 1px solid $btn-text;
+    width: 100%;
 }
 
 .ubicacion__thumbnail {
-    order: 2;
+    order: 1;
     max-width: 680px;
     display: flex;
-    justify-content: flex-end;
 
     .ubicacion__img {
         min-width: 700px !important;
@@ -23,7 +23,7 @@
 }
 
 .ubicacion__information {
-    order: 1;
+    order: 2;
     display: flex;
     padding: 70px 0 0 0;
     align-items: center;
@@ -173,7 +173,18 @@
     align-items: center;
     gap: 20px;
   }
+
+  
+    .ubicacion__thumbnail {
+        order: 2;
+    
+    }
+
+    .ubicacion__information {
+        order: 1;}
 }
+
+
 @media (max-width: 1024px) {
 
     .information__text {
@@ -186,3 +197,27 @@
     }
   
 }
+
+
+@media (max-width: 768px) {
+
+    .ubicacion__thumbnail {
+        width: 100%;
+        justify-content: center;
+
+        .ubicacion__img {
+            min-width: 400px !important;
+            min-height: 380px;
+            height: 80%;
+            width: 80%;
+      
+        }
+    }
+
+    .ubicacion__information {
+        width: 100%;
+        min-width: 100% !important;
+    }
+  
+}
+

@@ -42,7 +42,7 @@ function HomeView() {
       </section>
       <div className="separator-l"></div>
       <Cards />
-      <div className="separator-xl"></div>
+      <div className="separator-xl separator-xl--query"></div>
       <div className="slider__container">
         <h1 className="slider__title  title">Galeria</h1>
         <div className="separator-s"></div>
@@ -50,7 +50,7 @@ function HomeView() {
         <Slider />
         <img src={planetSaturn} alt="" className="slider__img--absolute-2" />
       </div>
-      <div className="separator-s"></div>
+      <div className="separator-s separator-s--query"></div>
       <div className="reservas__container" id="reservas">
         <h1 className="reservas__title title" >Reservas</h1>
         <div className="separator-l"></div>
