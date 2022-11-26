@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import rocket from "../assets/img/rocket.png";
 import planetSaturn from "../assets/img/planetSaturn.png";
 import bigAstronaut from "../assets/img/bigastronaut.png";
@@ -8,6 +9,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCoffee, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
 function HomeView() {
+  const [rocketActive, setRocketActive] = useState(false);
+
+  const handleToggle = () => {
+    setRocketActive(!rocketActive);
+  };
+
   return (
     <>
       <div className="separator-xl  separator-xl--query"></div>
@@ -19,11 +26,14 @@ function HomeView() {
         <img
           src={planetSaturn}
           alt=""
-          className="presentation__img--absolute planet--hover"
+          className={`presentation__img--absolute planet--hover`}
+
         />
         <div className="separator-l separator-l--query"></div>
         <div className="presentation__thumbnail">
-          <img src={rocket} alt="" className="presentation__img" />
+          <img src={rocket} alt=""
+           className={`presentation__img ${rocketActive ? "transform-active" : ''}`}
+           onClick={handleToggle}/>
           <img
             src={bigAstronaut}
             alt=""

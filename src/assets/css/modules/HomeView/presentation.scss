@@ -1,6 +1,27 @@
 @import '../Global/colors.scss';
 @import '../Global/fonts.scss';
 
+.transform-active {
+    animation-duration: 2s; 
+    animation-name: transform;
+
+  }
+
+  @keyframes transform {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50%{
+        transform: rotate(35deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+  }
+
+
 .presentation {
     display: flex;
     flex-direction: column;
@@ -45,7 +66,9 @@
         width: 100%;
 
         .presentation__img {
+            cursor: pointer;
             height: 250px;
+            transition: 0.7s all;
             width: 430px;
         }
 
@@ -133,8 +156,8 @@
 
     .presentation__thumbnail{
         display: flex;
-        justify-content: center;
         height: 300px !important;
+        justify-content: center;
     }
   
     .presentation__img{
