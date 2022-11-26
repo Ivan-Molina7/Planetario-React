@@ -1,34 +1,8 @@
-1440px
-Header fuentes/**
-Margin texto presentacion
-Foto footer
+1440px  
+    Cambiar el flex del contendedor de la foto 
+        flex: 28%
 
 
-1024 
-Sacar planeta1 astro1 separator presentacion 
-
-
-Reservas container
-    height: 336px;
-
-footer
-    Agrandar las letras
-
-
-
-768   
-
-CARD container  
-    gap 30**
-
-Eliminar slider
-
-button up 
-    Tamano
-    margin bottom
-
-footer
-    Social media tama;o
-
-    foto footer 
-        text align center
+1024 px
+    Hacer la card en :vertical
+    

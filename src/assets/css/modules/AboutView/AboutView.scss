@@ -90,9 +90,10 @@
         gap: 60px;
         height: auto;
         height: 260px;
-        // width: 80%;
+        width: 80%;
         padding: 50px;
         transition: 0.7s all;
+  
 
         .card__actividades__container {
             display: flex;
@@ -176,6 +177,8 @@
         .card__actividades__main__thumbnail {
             flex: 28%;
             height: 100%;
+            min-height: 270px;
+            min-width: 270px;
 
             .card__actividades__main__img {
                 border-radius: 8px;
@@ -193,6 +196,7 @@
     gap: 40px;
     justify-content: center;
     padding: 0 10%;
+    margin-bottom: 40px;
 
   
     .scroll_up__container__thumbnail {
@@ -229,3 +233,280 @@
 }
 
 
+@media (max-width: 1440px){
+    .cards-actividades__container{
+        padding: 0 5%;
+    }
+
+    .card__actividades{
+     
+    }
+
+     .card__actividades__main__thumbnail{
+        flex:30% !important;
+ }
+}
+
+
+@media (max-width: 1024px){
+
+    .cards-actividades__container{
+       
+    }
+
+    .card__actividades{
+        flex-direction: column;
+        height: auto !important;
+        max-width: 450px;
+
+        .card__actividades__container{
+            order: 2;
+
+            .card__actividades__container__title{
+                flex-direction: column !important;
+                gap: 10px !important;
+            }
+
+            .card__actividades__content{
+               
+                .card__actividades__content__text{
+                    text-align: center !important;
+                }
+
+                .card__actividades__content__button{
+                    align-self: center !important;
+                }
+            }
+        }
+
+
+
+        .card__actividades__main__thumbnail{
+            order: 1;
+        }
+    }
+
+
+}
+
+@media (max-width: 768px){
+
+    .card__actividades{
+      
+        min-width: 450px;
+        gap: 40px;
+    
+
+        .card__actividades__container{
+            order: 2;
+
+            .card__actividades__container__title{
+           
+            }
+
+            .card__actividades__content{
+               
+                .card__actividades__content__text{
+             
+                }
+
+             
+            }
+        }
+
+
+
+        .card__actividades__main__thumbnail{
+            // min-height: 270px !important;
+            // min-width: 400px !important;
+        }
+    }
+
+
+}
+
+
+@media (max-width: 650px){
+
+    .cards-actividades__container{
+        padding: 0 !important;
+    }
+
+    .card__actividades{
+        width: 350px !important;
+        min-width: 250px;
+        gap: 20px !important;
+        padding: 50px 20px !important;
+
+        .card__actividades__container{
+            order: 2;
+
+            .card__actividades__container__title{
+           
+            }
+
+            .card__actividades__content{
+               
+                .card__actividades__content__text{
+             
+                }
+            }
+        }
+
+
+
+        .card__actividades__main__thumbnail{
+            // min-height: 270px !important;
+            // min-width: 400px !important;
+        }
+    }
+
+
+}
+
+@media (max-width: 425px){
+
+    .actividades__subtitle{
+        padding: 0 !important;
+    }
+
+    .separator--reservas{
+        display: none;
+    }
+
+    .cards-actividades__container{
+        padding: 0 !important;
+        justify-content: flex-start;
+        scale: 0.87;
+        transition: all 0s !important;
+    }
+
+    .card__actividades{
+        
+        padding: 20px !important;
+        .card__actividades__container{
+            order: 2;
+
+            .card__actividades__container__title{
+           
+            }
+
+            .card__actividades__content{
+                align-items: center !important;
+
+                .card__actividades__content__text{
+             
+                }
+
+             
+            }
+        }
+
+
+
+        .card__actividades__main__thumbnail{
+            // min-height: 270px !important;
+            // min-width: 400px !important;
+        }
+    }
+
+
+}
+
+@media (max-width: 345px){
+
+    .cards-actividades__container{
+        padding: 0 !important;
+        scale: 0.7;
+    }
+
+    .card__actividades{
+       
+
+        .card__actividades__container{
+            order: 2;
+
+            .card__actividades__container__title{
+           
+            }
+
+            .card__actividades__content{
+                align-items: center !important;
+
+                .card__actividades__content__text{
+             
+                }
+
+                .card__actividades__content__button{
+                    align-self: center !important;
+                }
+            }
+        }
+
+
+
+        .card__actividades__main__thumbnail{
+            min-height: auto !important;
+            min-width: auto !important;
+        }
+    }
+
+
+}
+
+@media (max-width: 320px){
+
+    .actividades__subtitle{
+        font-size: 20px !important;
+    }
+
+    .cards-actividades__container{
+        padding: 0 !important;
+        margin: 40px 0;
+        width: 100%;
+        scale: 1;
+    }
+
+    .card__actividades{
+      
+        width: 100px !important;
+        padding: 30px 0px !important;
+        gap: 50px  !important;
+
+        .card__actividades__container{
+       
+            order: 2;
+
+            .card__actividades__container__title{
+                
+                .card__actividades__title{
+                    font-size: 25px !important;
+                }
+            }
+
+            .card__actividades__content{
+                align-items: center !important;
+                width: 100%;
+
+                .card__actividades__content__text{
+                    font-size: 18px !important;
+                    padding: 0 15px;
+                }
+
+                .card__actividades__content__button{
+                    align-self: center !important;
+                }
+            }
+        }
+
+
+
+        .card__actividades__main__thumbnail{
+            min-height: auto !important;
+            min-width: auto !important;
+            width: 85%;
+        }
+    }
+
+
+}

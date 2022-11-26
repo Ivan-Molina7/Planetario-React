@@ -38,7 +38,7 @@ function AboutView() {
           </h3>
         </div>
 
-        <div className="separator-md"></div>
+        <div className="separator-md separator--reservas"></div>
 
         <div className="cards-actividades__container">
           <div className="card__actividades">
@@ -109,7 +109,7 @@ function AboutView() {
                 className="card__actividades__main__img"
               />
             </div>
-          </div>
+          </div> 
 
           <div className="card__actividades">
             <div className="card__actividades__container">
@@ -149,7 +149,7 @@ function AboutView() {
           </div>
         </div>
 
-        <div className="separator-md"></div>
+        <div className="separator-md separator--reservas"></div>
 
         <div className="scroll_up__container">
           <div className="scroll_up__container__thumbnail">
@@ -164,7 +164,7 @@ function AboutView() {
             <FontAwesomeIcon icon={faArrowUp} />
           </a>
         </div>
-        <div className="separator-md"></div>
+
     </>
   );
 }
