@@ -21,7 +21,7 @@ function AboutView() {
     <>
   
         <div className="back__container">
-          <Link to="/" className="back__button">
+          <Link to="/Planetario-React" className="back__button">
             <FontAwesomeIcon icon={faArrowLeft} />
           </Link>
         </div>

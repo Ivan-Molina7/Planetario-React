@@ -45,17 +45,10 @@ function MainNavigation() {
 
         <ul className={`header__nav__item ${clicked ? 'active' : ''}`}>
           <li>
-            <Link to="/about" className="link" >Actividades</Link>
+            <Link to="Planetario-React/about" className="link" >Actividades</Link>
           </li>
           <li>
-            <Link
-              to={{
-                pathname: "/",
-                search: "reservas",
-              }}
-              className="link"
-          
-            >
+            <Link to="/Planetario-React" className="link">
               Reservas
             </Link>
           </li>
@@ -73,8 +66,8 @@ function MainNavigation() {
 
       <main>
         <Routes>
-          <Route path="/" element={<HomeView />} />
-          <Route path="/about" element={<AboutView />} />
+          <Route path="Planetario-React/" element={<HomeView />} />
+          <Route path="Planetario-React/about" element={<AboutView />} />
         </Routes>
       </main>
     </Router>

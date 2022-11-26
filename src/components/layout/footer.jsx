@@ -36,17 +36,17 @@ function Footer() {
           <div className="information__social">
             <ul className="social__container">
             <li className="social__block">
-                <a href="#" className="social__item">
+                <a href="https://www.facebook.com/planetariodemontevideo/" className="social__item" target="_blank">
                   <FontAwesomeIcon icon={faFacebook}  className="social__item__icon"/>
                 </a>
               </li>
               <li className="social__block">
-                <a href="#" className="social__item">
+                <a href="https://twitter.com/planetario_mvd" className="social__item" target="_blank">
                   <FontAwesomeIcon icon={faTwitter}  className="social__item__icon"/>
                 </a>
               </li>
               <li className="social__block">
-                <a href="#" className="social__item">
+                <a href="https://www.instagram.com/planetario.de.montevideo/?hl=es" className="social__item" target="_blank">
                   <FontAwesomeIcon icon={faInstagram}  className="social__item__icon"/>
                 </a>
               </li>
@@ -59,3 +59,4 @@ function Footer() {
   );
 }
 export default Footer;
+
