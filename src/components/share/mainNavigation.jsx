@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, Routes, useLocation } from "react-router-dom";
+import { HashLink  } from 'react-router-hash-link';
 import AboutView from "../../views/AboutView";
 import HomeView from "../../views/HomeView";
 import "../../assets/css/style.min.css";
@@ -22,11 +23,11 @@ const Home = React.lazy(() => import("../../views/HomeView"));
 
 function MainNavigation() {
 
+
   const [clicked, setClicked] = useState(false)
 
   const handleClick = () => {
     setClicked(!clicked)
-    console.log(clicked)
   }
 
 
@@ -48,9 +49,9 @@ function MainNavigation() {
             <Link to="Planetario-React/about" className="link" >Actividades</Link>
           </li>
           <li>
-            <Link to="/Planetario-React" className="link">
+            <HashLink smooth to="/Planetario-React#reservas" className="link">
               Reservas
-            </Link>
+            </HashLink>
           </li>
           <li>
             <a href="#contacto" className="link">Contacto</a>
@@ -68,6 +69,7 @@ function MainNavigation() {
         <Routes>
           <Route path="Planetario-React/" element={<HomeView />} />
           <Route path="Planetario-React/about" element={<AboutView />} />
+          <Route path="*" element={<HomeView />} />
         </Routes>
       </main>
     </Router>

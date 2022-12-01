@@ -16,7 +16,7 @@ function Footer() {
     <>
       <footer className="ubicacion__container" id="contacto">
         <div className="ubicacion__thumbnail">
-          <img src={mapa} alt="" className="ubicacion__img" />
+          <iframe className="ubicacion__img" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13088.735506790134!2d-56.1445373!3d-34.9018348!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x568b22e488508f25!2sPlanetario!5e0!3m2!1ses!2suy!4v1669868215656!5m2!1ses!2suy" loading="lazy" ></iframe>
         </div>
         <div className="ubicacion__information">
           <div className="information__text">
